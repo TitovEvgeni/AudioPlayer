@@ -14,17 +14,17 @@ extension MusicViewController: UISearchBarDelegate {
         searchBar.text = ""
         
         if trimmingSearchText == ""  {
-            musicShowModel = musicModel
+            presenter.musicToShow = presenter.music
             reloadTableData()
             noResultsStackView.isHidden = true
             return
         }
                
-        let searchResult = musicModel?.filter { $0.name?.lowercased() == trimmingSearchText }
+        let searchResult = presenter.music?.filter { $0.name?.lowercased() == trimmingSearchText }
         
         noResultsStackView.isHidden = searchResult?.count == 0 ? false : true
         
-        musicShowModel = searchResult
+        presenter.musicToShow = searchResult
         reloadTableData()
     }
     
