@@ -9,7 +9,7 @@ class MusicTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        trackImage.isHidden = true
+        trackImage.hideView()
     }
     
     override func awakeFromNib() {
@@ -29,9 +29,9 @@ class MusicTableViewCell: UITableViewCell {
         
         if let stringUrl = model?.imageUrl {
             trackImage.setImage(from: stringUrl)
-            trackImage.isHidden = false
+            trackImage.showView()
         } else {
-            trackImage.isHidden = true
+            trackImage.hideView()
         }
     }
 }

@@ -9,14 +9,18 @@ extension MusicViewController: UISearchBarDelegate {
         if trimmingSearchText == ""  {
             musicShowModel = musicModel
             reloadTableData()
-            noResultsStackView.isHidden = true
+            noResultsStackView.hideView()
             return
         }
                
         let searchResult = musicModel?.filter { $0.name?.lowercased() == trimmingSearchText }
         
-        noResultsStackView.isHidden = searchResult?.count == .zero ? false : true
-        
+        if searchResult?.count == .zero {
+            noResultsStackView.showView()
+        } else {
+            noResultsStackView.hideView()
+        }
+                
         musicShowModel = searchResult
         reloadTableData()
     }

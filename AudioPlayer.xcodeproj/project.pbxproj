@@ -10,6 +10,7 @@
 		52464957CC3CCAD7EB6A3A1D /* Pods_AudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4A5AB8C70331BC90E2D2B4 /* Pods_AudioPlayer.framework */; };
 		C7122F7626010A36002D79AB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7122F7526010A36002D79AB /* R.generated.swift */; };
 		C7122F7B26010A62002D79AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7122F7D26010A62002D79AB /* Localizable.strings */; };
+		C76C889526012C620071A39F /* UIView+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C889426012C620071A39F /* UIView+isHidden.swift */; };
 		C788520525FE0964005528D7 /* ImageViewWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788520425FE0964005528D7 /* ImageViewWeb.swift */; };
 		C79703A025FB436C00A86A08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C797039F25FB436C00A86A08 /* GoogleService-Info.plist */; };
 		C79703CA25FB73BA00A86A08 /* MusicFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79703C925FB73BA00A86A08 /* MusicFirebase.swift */; };
@@ -42,6 +43,7 @@
 		AF3CC8BCE86FFEFECD93D3EC /* Pods-AudioPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer.debug.xcconfig"; path = "Target Support Files/Pods-AudioPlayer/Pods-AudioPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		C7122F7526010A36002D79AB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C7122F7C26010A62002D79AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C76C889426012C620071A39F /* UIView+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+isHidden.swift"; sourceTree = "<group>"; };
 		C788520425FE0964005528D7 /* ImageViewWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWeb.swift; sourceTree = "<group>"; };
 		C797039F25FB436C00A86A08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79703C925FB73BA00A86A08 /* MusicFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFirebase.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				C7F1EC3125FA897A006ABE73 /* MusicViewController+UISearchBarDelegate.swift */,
 				C7F1EC3925FA98CD006ABE73 /* Codable+JSON.swift */,
 				C79703CF25FB7B6E00A86A08 /* Codable+Dictionary.swift */,
+				C76C889426012C620071A39F /* UIView+isHidden.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				C7C81EA225FA648800612E1A /* SceneDelegate.swift in Sources */,
 				C79703CD25FB73D300A86A08 /* FirebaseHandler.swift in Sources */,
 				C7F1EC3225FA897A006ABE73 /* MusicViewController+UISearchBarDelegate.swift in Sources */,
+				C76C889526012C620071A39F /* UIView+isHidden.swift in Sources */,
 				C7E46FAD25FE3A0B0038206F /* PlayerManager.swift in Sources */,
 				C7F1EC3E25FA9F9D006ABE73 /* MusicResult.swift in Sources */,
 				C7E46FB125FE3E510038206F /* PlayerRate.swift in Sources */,
