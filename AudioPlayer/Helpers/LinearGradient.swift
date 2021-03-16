@@ -4,6 +4,11 @@ class LinearGradient: UIView {
     
     private let gradient = CAGradientLayer()
     
+    private let startXPosition: Double = 0
+    private let startYPosition: Double = 0.5
+    private let endXPosition: Double = 1
+    private let endYPosition: Double = 0.5
+    
     @IBInspectable private var startColor: UIColor? {
         didSet {
             addGradientColors()
@@ -33,8 +38,12 @@ class LinearGradient: UIView {
     private func setLinearGradient() {
         self.layer.addSublayer(gradient)
         addGradientColors()
-        gradient.startPoint = CGPoint(x: 0, y: 0.5)
-        gradient.endPoint = CGPoint(x: 1, y: 0.5)
+        addGradientPoints()
+    }
+    
+    private func addGradientPoints() {
+        gradient.startPoint = CGPoint(x: startXPosition, y: startYPosition)
+        gradient.endPoint = CGPoint(x: endXPosition, y: endYPosition)
     }
 
     private func addGradientColors() {

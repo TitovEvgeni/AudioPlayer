@@ -8,7 +8,9 @@ class MusicViewController: UIViewController {
     
     var musicModel: [Music]?
     var musicShowModel: [Music]?
-
+    
+    private let searchBarBorderWidth: CGFloat = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +22,7 @@ class MusicViewController: UIViewController {
         table.backgroundColor = .clear
         table.register(UINib(nibName: MusicTableViewCell.reuseIndetifier, bundle: nil), forCellReuseIdentifier: MusicTableViewCell.reuseIndetifier)
         table.tableFooterView = UIView()
-        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderWidth = searchBarBorderWidth
         searchBar.layer.borderColor = UIColor.white.cgColor
     }
     
@@ -47,7 +49,7 @@ class MusicViewController: UIViewController {
 extension MusicViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return musicShowModel?.count ?? 0
+        return musicShowModel?.count ?? .zero
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

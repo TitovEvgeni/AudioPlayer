@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52464957CC3CCAD7EB6A3A1D /* Pods_AudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4A5AB8C70331BC90E2D2B4 /* Pods_AudioPlayer.framework */; };
+		C7122F7626010A36002D79AB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7122F7526010A36002D79AB /* R.generated.swift */; };
+		C7122F7B26010A62002D79AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7122F7D26010A62002D79AB /* Localizable.strings */; };
 		C788520525FE0964005528D7 /* ImageViewWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788520425FE0964005528D7 /* ImageViewWeb.swift */; };
 		C79703A025FB436C00A86A08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C797039F25FB436C00A86A08 /* GoogleService-Info.plist */; };
 		C79703CA25FB73BA00A86A08 /* MusicFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79703C925FB73BA00A86A08 /* MusicFirebase.swift */; };
@@ -38,6 +40,8 @@
 		5E4A5AB8C70331BC90E2D2B4 /* Pods_AudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F09A266FE9DF50AB0DB4C7 /* Pods-AudioPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer.release.xcconfig"; path = "Target Support Files/Pods-AudioPlayer/Pods-AudioPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		AF3CC8BCE86FFEFECD93D3EC /* Pods-AudioPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer.debug.xcconfig"; path = "Target Support Files/Pods-AudioPlayer/Pods-AudioPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		C7122F7526010A36002D79AB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C7122F7C26010A62002D79AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C788520425FE0964005528D7 /* ImageViewWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWeb.swift; sourceTree = "<group>"; };
 		C797039F25FB436C00A86A08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79703C925FB73BA00A86A08 /* MusicFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFirebase.swift; sourceTree = "<group>"; };
@@ -169,8 +173,10 @@
 				C7C81E9F25FA648800612E1A /* AppDelegate.swift */,
 				C7C81EA125FA648800612E1A /* SceneDelegate.swift */,
 				C7C81EA825FA648900612E1A /* Assets.xcassets */,
+				C7122F7526010A36002D79AB /* R.generated.swift */,
 				C797039F25FB436C00A86A08 /* GoogleService-Info.plist */,
 				C7C81EAD25FA648900612E1A /* Info.plist */,
+				C7122F7D26010A62002D79AB /* Localizable.strings */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			buildConfigurationList = C7C81EB025FA648900612E1A /* Build configuration list for PBXNativeTarget "AudioPlayer" */;
 			buildPhases = (
 				602506F7DE00D3F8D3366E0B /* [CP] Check Pods Manifest.lock */,
+				C7122F73260109AA002D79AB /* ShellScript */,
 				C7C81E9825FA648800612E1A /* Sources */,
 				C7C81E9925FA648800612E1A /* Frameworks */,
 				C7C81E9A25FA648800612E1A /* Resources */,
@@ -332,6 +339,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = C7C81E9325FA648800612E1A;
 			productRefGroup = C7C81E9D25FA648800612E1A /* Products */;
@@ -349,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C81EC125FA690E00612E1A /* MusicViewController.xib in Resources */,
+				C7122F7B26010A62002D79AB /* Localizable.strings in Resources */,
 				C7A7998D25FAA70500F44E0B /* PlayerViewController.xib in Resources */,
 				C79703A025FB436C00A86A08 /* GoogleService-Info.plist in Resources */,
 				C7C81EA925FA648900612E1A /* Assets.xcassets in Resources */,
@@ -398,6 +407,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioPlayer/Pods-AudioPlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7122F73260109AA002D79AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -412,6 +440,7 @@
 				C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */,
 				C79703D025FB7B6E00A86A08 /* Codable+Dictionary.swift in Sources */,
 				C7F1EC3625FA9890006ABE73 /* RequestHandler.swift in Sources */,
+				C7122F7626010A36002D79AB /* R.generated.swift in Sources */,
 				C7E46FA825FE18490038206F /* LinearGradient.swift in Sources */,
 				C7F1EC3A25FA98CD006ABE73 /* Codable+JSON.swift in Sources */,
 				C7C81EA025FA648800612E1A /* AppDelegate.swift in Sources */,
@@ -428,6 +457,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7122F7D26010A62002D79AB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7122F7C26010A62002D79AB /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C7C81EAE25FA648900612E1A /* Debug */ = {

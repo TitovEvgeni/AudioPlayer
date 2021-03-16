@@ -14,7 +14,7 @@ struct RequestHandler {
         return hostUrl + path
     }
     
-    init(hostUrl: String = "default url", path: String = "", method: HTTPMethod = .get, parameters: Parameters? = nil) {
+    init(hostUrl: String = "defaultUrl", path: String = "", method: HTTPMethod = .get, parameters: Parameters? = nil) {
         self.hostUrl = hostUrl
         self.path = path
         self.method = method

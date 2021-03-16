@@ -49,7 +49,7 @@ class PlayerViewController: UIViewController {
             PlayerManager.shared.initPlayer(musicModel?.url)
         }
         PlayerManager.shared.playerAction() == PlayerRate.play
-            ? sender.setTitle("Pause", for: .normal)
-            : sender.setTitle("Play", for: .normal)
+            ? sender.setTitle(R.string.localizable.playerPauseButton(), for: .normal)
+            : sender.setTitle(R.string.localizable.playerPlayButton(), for: .normal)
     }
 }
