@@ -21,7 +21,6 @@ class MusicTableViewCell: UITableViewCell {
     private func setUpElements() {
         backgroundColor = .clear
         selectionStyle = .none
-        self.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     }
 
     func set(_ model: Music?) {

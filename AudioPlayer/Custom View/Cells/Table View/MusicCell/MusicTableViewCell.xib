@@ -53,6 +53,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
             <connections>
                 <outlet property="albumNameLabel" destination="PhK-ns-aEV" id="KhC-v5-2v4"/>
                 <outlet property="songNameLabel" destination="LYj-Tv-Tp6" id="FXQ-OQ-AGs"/>
