@@ -8,10 +8,13 @@
 import Foundation
 
 class MusicPresenter: MusicPresenterProtocol {
+    
     private weak var view: MusicViewProtocol?
     
     var music: [Music]?
-    var musicToShow: [Music]?
+    var filteredMusic: [Music]?
+    
+    private var isFiltered: Bool = false
     
     required init(view: MusicViewProtocol) {
         self.view = view
@@ -28,8 +31,42 @@ class MusicPresenter: MusicPresenterProtocol {
                       url: $0.value.url,
                       imageUrl: $0.value.imageUrl)
             }
-            self.musicToShow = self.music
             self.view?.reloadTableData()
         })
+    }
+    
+    func checkSearchField(_ songTitle: String?) {
+        guard let songTitle = songTitle else { return }
+        isFiltered = false
+        
+        let trimmingSearchText = songTitle.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        if trimmingSearchText == ""  {
+            view?.hideNoResultStackView()
+            return
+        }
+        
+        generateCurrentMusicModel(trimmingSearchText)
+    }
+    
+    func choseCurrentModel() -> [Music]? {
+        if isFiltered == true {
+            return filteredMusic
+        } else {
+            return music
+        }
+    }
+    
+    private func generateCurrentMusicModel(_ result: String) {
+        let searchResult = music?.filter { $0.name?.lowercased() == result }
+        
+        if searchResult?.count == .zero {
+            filteredMusic?.removeAll()
+            isFiltered = true
+            view?.showNoResultStackView()
+        } else {
+            filteredMusic = searchResult
+            isFiltered = true
+            view?.hideNoResultStackView()
+        }
     }
 }
