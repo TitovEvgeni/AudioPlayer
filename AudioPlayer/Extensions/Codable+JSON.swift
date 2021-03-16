@@ -1,10 +1,3 @@
-//
-//  Codable+JSON.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 11.03.21.
-//
-
 import Foundation
 import SwiftyJSON
 
