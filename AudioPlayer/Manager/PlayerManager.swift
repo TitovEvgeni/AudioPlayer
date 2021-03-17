@@ -1,10 +1,3 @@
-//
-//  PlayerManager.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 14.03.21.
-//
-
 import UIKit
 import AVFoundation
 

@@ -10,7 +10,6 @@
 		52464957CC3CCAD7EB6A3A1D /* Pods_AudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4A5AB8C70331BC90E2D2B4 /* Pods_AudioPlayer.framework */; };
 		C720C98326009A8400857460 /* MusicPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C98226009A8400857460 /* MusicPresenterProtocol.swift */; };
 		C720C98626009A9A00857460 /* MusicViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C98526009A9A00857460 /* MusicViewProtocol.swift */; };
-		C720C9922600A07E00857460 /* FirebaseHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C9912600A07E00857460 /* FirebaseHandlerProtocol.swift */; };
 		C720C9962600A17A00857460 /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C9952600A17A00857460 /* MusicPresenter.swift */; };
 		C720C99A2600ACF000857460 /* MusicAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C9992600ACF000857460 /* MusicAssembly.swift */; };
 		C788520525FE0964005528D7 /* ImageViewWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788520425FE0964005528D7 /* ImageViewWeb.swift */; };
@@ -19,6 +18,9 @@
 		C79703CD25FB73D300A86A08 /* FirebaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79703CC25FB73D300A86A08 /* FirebaseHandler.swift */; };
 		C79703D025FB7B6E00A86A08 /* Codable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79703CF25FB7B6E00A86A08 /* Codable+Dictionary.swift */; };
 		C79703D925FBA90700A86A08 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79703D825FBA90700A86A08 /* Music.swift */; };
+		C7A35F2A2601D6FA003A4EF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A35F292601D6FA003A4EF7 /* Localizable.strings */; };
+		C7A35F2D2601D74A003A4EF7 /* UIView+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35F2C2601D74A003A4EF7 /* UIView+isHidden.swift */; };
+		C7A35FBB2601D94D003A4EF7 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FBA2601D94D003A4EF7 /* R.generated.swift */; };
 		C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */; };
 		C7A7998D25FAA70500F44E0B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */; };
 		C7C81EA025FA648800612E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C81E9F25FA648800612E1A /* AppDelegate.swift */; };
@@ -45,7 +47,6 @@
 		AF3CC8BCE86FFEFECD93D3EC /* Pods-AudioPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer.debug.xcconfig"; path = "Target Support Files/Pods-AudioPlayer/Pods-AudioPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		C720C98226009A8400857460 /* MusicPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenterProtocol.swift; sourceTree = "<group>"; };
 		C720C98526009A9A00857460 /* MusicViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewProtocol.swift; sourceTree = "<group>"; };
-		C720C9912600A07E00857460 /* FirebaseHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHandlerProtocol.swift; sourceTree = "<group>"; };
 		C720C9952600A17A00857460 /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
 		C720C9992600ACF000857460 /* MusicAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAssembly.swift; sourceTree = "<group>"; };
 		C788520425FE0964005528D7 /* ImageViewWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWeb.swift; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		C79703CC25FB73D300A86A08 /* FirebaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHandler.swift; sourceTree = "<group>"; };
 		C79703CF25FB7B6E00A86A08 /* Codable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Dictionary.swift"; sourceTree = "<group>"; };
 		C79703D825FBA90700A86A08 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		C7A35F292601D6FA003A4EF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C7A35F2C2601D74A003A4EF7 /* UIView+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+isHidden.swift"; sourceTree = "<group>"; };
+		C7A35FBA2601D94D003A4EF7 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		C7C81E9C25FA648800612E1A /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,14 +107,6 @@
 				94F09A266FE9DF50AB0DB4C7 /* Pods-AudioPlayer.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C720C9902600A06500857460 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				C720C9912600A07E00857460 /* FirebaseHandlerProtocol.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		C720C9982600ACA500857460 /* Assembly */ = {
@@ -188,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				C720C9982600ACA500857460 /* Assembly */,
-				C720C9902600A06500857460 /* Protocols */,
 				C7F1EC3425FA9879006ABE73 /* Objects */,
 				C7F1EC4125FAA05E006ABE73 /* Manager */,
 				C788520325FE0947005528D7 /* Helpers */,
@@ -202,6 +197,8 @@
 				C7C81EA825FA648900612E1A /* Assets.xcassets */,
 				C797039F25FB436C00A86A08 /* GoogleService-Info.plist */,
 				C7C81EAD25FA648900612E1A /* Info.plist */,
+				C7A35F292601D6FA003A4EF7 /* Localizable.strings */,
+				C7A35FBA2601D94D003A4EF7 /* R.generated.swift */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -256,6 +253,7 @@
 				C7F1EC3125FA897A006ABE73 /* MusicViewController+UISearchBarDelegate.swift */,
 				C7F1EC3925FA98CD006ABE73 /* Codable+JSON.swift */,
 				C79703CF25FB7B6E00A86A08 /* Codable+Dictionary.swift */,
+				C7A35F2C2601D74A003A4EF7 /* UIView+isHidden.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +326,7 @@
 			buildConfigurationList = C7C81EB025FA648900612E1A /* Build configuration list for PBXNativeTarget "AudioPlayer" */;
 			buildPhases = (
 				602506F7DE00D3F8D3366E0B /* [CP] Check Pods Manifest.lock */,
+				C7A35F2F2601D7D9003A4EF7 /* ShellScript */,
 				C7C81E9825FA648800612E1A /* Sources */,
 				C7C81E9925FA648800612E1A /* Frameworks */,
 				C7C81E9A25FA648800612E1A /* Resources */,
@@ -380,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C81EC125FA690E00612E1A /* MusicViewController.xib in Resources */,
+				C7A35F2A2601D6FA003A4EF7 /* Localizable.strings in Resources */,
 				C7A7998D25FAA70500F44E0B /* PlayerViewController.xib in Resources */,
 				C79703A025FB436C00A86A08 /* GoogleService-Info.plist in Resources */,
 				C7C81EA925FA648900612E1A /* Assets.xcassets in Resources */,
@@ -429,6 +429,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudioPlayer/Pods-AudioPlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7A35F2F2601D7D9003A4EF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -438,6 +457,7 @@
 			files = (
 				C7F1EC2A25FA7EE1006ABE73 /* MusicTableViewCell.swift in Sources */,
 				C7C81EC025FA690E00612E1A /* MusicViewController.swift in Sources */,
+				C7A35FBB2601D94D003A4EF7 /* R.generated.swift in Sources */,
 				C79703D925FBA90700A86A08 /* Music.swift in Sources */,
 				C7F1EC1C25FA7E02006ABE73 /* UITableViewCell.swift in Sources */,
 				C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */,
@@ -448,7 +468,7 @@
 				C720C98626009A9A00857460 /* MusicViewProtocol.swift in Sources */,
 				C7C81EA025FA648800612E1A /* AppDelegate.swift in Sources */,
 				C720C9962600A17A00857460 /* MusicPresenter.swift in Sources */,
-				C720C9922600A07E00857460 /* FirebaseHandlerProtocol.swift in Sources */,
+				C7A35F2D2601D74A003A4EF7 /* UIView+isHidden.swift in Sources */,
 				C788520525FE0964005528D7 /* ImageViewWeb.swift in Sources */,
 				C7C81EA225FA648800612E1A /* SceneDelegate.swift in Sources */,
 				C79703CD25FB73D300A86A08 /* FirebaseHandler.swift in Sources */,

@@ -1,10 +1,3 @@
-//
-//  MusicPresenter.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 16.03.21.
-//
-
 import Foundation
 
 class MusicPresenter: MusicPresenterProtocol {
@@ -58,14 +51,13 @@ class MusicPresenter: MusicPresenterProtocol {
     
     private func generateCurrentMusicModel(_ result: String) {
         let searchResult = music?.filter { $0.name?.lowercased() == result }
+        isFiltered = true
         
         if searchResult?.count == .zero {
             filteredMusic?.removeAll()
-            isFiltered = true
             view?.showNoResultStackView()
         } else {
             filteredMusic = searchResult
-            isFiltered = true
             view?.hideNoResultStackView()
         }
     }

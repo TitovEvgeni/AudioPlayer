@@ -33,12 +33,16 @@ PODS:
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
   - PromisesObjC (1.2.12)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
-  - Firebase/Database
-  - IQKeyboardManagerSwift
+  - Firebase/Database (~> 7.8.0)
+  - IQKeyboardManagerSwift (~> 6.5.0)
+  - R.swift (~> 5.4.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -54,6 +58,8 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - R.swift
+    - R.swift.Library
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -68,8 +74,10 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 57d088f18297081d497cd9fcd09ec905bd3eeae4
+PODFILE CHECKSUM: adedf79cae0531dbd74ccf8d32ce324c6755960f
 
 COCOAPODS: 1.10.0

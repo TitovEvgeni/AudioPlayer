@@ -1,10 +1,3 @@
-//
-//  PlayerViewController.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 11.03.21.
-//
-
 import UIKit
 
 class PlayerViewController: UIViewController {
@@ -41,9 +34,9 @@ class PlayerViewController: UIViewController {
         
         if let stringUrl = musicModel?.imageUrl {
             trackImage.setImage(from: stringUrl)
-            trackImage.isHidden = false
+            trackImage.showView()
         } else {
-            trackImage.isHidden = true
+            trackImage.hideView()
         }
     }
 
@@ -56,7 +49,7 @@ class PlayerViewController: UIViewController {
             PlayerManager.shared.initPlayer(musicModel?.url)
         }
         PlayerManager.shared.playerAction() == PlayerRate.play
-            ? sender.setTitle("Pause", for: .normal)
-            : sender.setTitle("Play", for: .normal)
+            ? sender.setTitle(R.string.localizable.playerPauseButton(), for: .normal)
+            : sender.setTitle(R.string.localizable.playerPlayButton(), for: .normal)
     }
 }

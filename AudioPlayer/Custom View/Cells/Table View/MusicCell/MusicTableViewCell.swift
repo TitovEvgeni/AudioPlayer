@@ -1,10 +1,3 @@
-//
-//  MusicCell.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 11.03.21.
-//
-
 import UIKit
 
 class MusicTableViewCell: UITableViewCell {
@@ -16,7 +9,7 @@ class MusicTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        trackImage.isHidden = true
+        trackImage.hideView()
     }
     
     override func awakeFromNib() {
@@ -28,7 +21,6 @@ class MusicTableViewCell: UITableViewCell {
     private func setUpElements() {
         backgroundColor = .clear
         selectionStyle = .none
-        self.separatorInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     }
 
     func set(_ model: Music?) {
@@ -37,9 +29,9 @@ class MusicTableViewCell: UITableViewCell {
         
         if let stringUrl = model?.imageUrl {
             trackImage.setImage(from: stringUrl)
-            trackImage.isHidden = false
+            trackImage.showView()
         } else {
-            trackImage.isHidden = true
+            trackImage.hideView()
         }
     }
 }

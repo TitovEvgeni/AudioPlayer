@@ -1,10 +1,3 @@
-//
-//  Codable+Dictionary.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 12.03.21.
-//
-
 import Foundation
 
 extension Encodable {

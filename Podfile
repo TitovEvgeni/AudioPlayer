@@ -6,9 +6,10 @@ target 'AudioPlayer' do
   use_frameworks!
 
   # Pods for AudioPlayer
-  pod 'IQKeyboardManagerSwift'
+  pod 'IQKeyboardManagerSwift', '~> 6.5.0'
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'Firebase/Database'
+  pod 'Firebase/Database', '~> 7.8.0'
+  pod 'R.swift', '~> 5.4.0' 
 
 end

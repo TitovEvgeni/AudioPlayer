@@ -1,10 +1,3 @@
-//
-//  MusicViewController.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 11.03.21.
-//
-
 import UIKit
 
 class MusicViewController: UIViewController {
@@ -69,12 +62,12 @@ extension MusicViewController: UITableViewDelegate {
 //MARK: - MusicViewProtocol
 extension MusicViewController: MusicViewProtocol {
     func hideNoResultStackView() {
-        noResultsStackView.isHidden = true
+        noResultsStackView.hideView()
         reloadTableData()
     }
     
     func showNoResultStackView() {
-        noResultsStackView.isHidden = false
+        noResultsStackView.showView()
         reloadTableData()
     }
     

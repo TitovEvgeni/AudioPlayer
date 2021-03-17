@@ -1,10 +1,3 @@
-//
-//  RequestHandler.swift
-//  AudioPlayer
-//
-//  Created by Titov, Evgeny on 11.03.21.
-//
-
 import Foundation
 import Alamofire
 import SwiftyJSON
@@ -21,7 +14,7 @@ struct RequestHandler {
         return hostUrl + path
     }
     
-    init(hostUrl: String = "default url", path: String = "", method: HTTPMethod = .get, parameters: Parameters? = nil) {
+    init(hostUrl: String = "defaultUrl", path: String = "", method: HTTPMethod = .get, parameters: Parameters? = nil) {
         self.hostUrl = hostUrl
         self.path = path
         self.method = method
