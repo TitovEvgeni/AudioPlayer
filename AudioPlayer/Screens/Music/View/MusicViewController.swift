@@ -29,15 +29,13 @@ class MusicViewController: UIViewController {
 extension MusicViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let presenter = presenter,
-              let model = presenter.choseCurrentModel() else { return .zero }
+        guard let model = presenter?.choseCurrentModel() else { return .zero }
         return model.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MusicTableViewCell.reuseIndetifier, for: indexPath) as? MusicTableViewCell,
-              let presenter = presenter,
-              let model = presenter.choseCurrentModel() else {
+              let model = presenter?.choseCurrentModel() else {
             return UITableViewCell()
         }
         let cellViewModel = model[indexPath.row]
@@ -50,10 +48,9 @@ extension MusicViewController: UITableViewDataSource {
 extension MusicViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let presenter = presenter,
-              let model = presenter.choseCurrentModel() else { return }
+        guard let model = presenter?.choseCurrentModel() else { return }
         let cellViewModel = model[indexPath.row]
-        let playerViewController = PlayerViewController(cellViewModel)
+        let playerViewController = PlayerAssembly.assembly(cellViewModel)
         playerViewController.modalPresentationStyle = .fullScreen
         present(playerViewController, animated: true, completion: nil)
     }

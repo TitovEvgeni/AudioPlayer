@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="albumLabel" destination="ddM-RN-keJ" id="cKp-sM-oWb"/>
                 <outlet property="navigationBar" destination="CuR-ta-PnN" id="KSN-qa-WiA"/>
+                <outlet property="playerButton" destination="O2j-oO-JR9" id="5gb-MH-Yt3"/>
                 <outlet property="songNameLabel" destination="Pnc-tX-His" id="6pv-Ez-PwE"/>
                 <outlet property="trackImage" destination="qHi-Wd-HMa" id="xe1-Ey-dmq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol MusicPresenterProtocol: class {
+protocol MusicPresenterProtocol {
     var music: [Music]? { get set }
     var filteredMusic: [Music]? { get set }
     

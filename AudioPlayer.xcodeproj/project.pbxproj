@@ -21,6 +21,10 @@
 		C7A35F2A2601D6FA003A4EF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7A35F292601D6FA003A4EF7 /* Localizable.strings */; };
 		C7A35F2D2601D74A003A4EF7 /* UIView+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35F2C2601D74A003A4EF7 /* UIView+isHidden.swift */; };
 		C7A35FBB2601D94D003A4EF7 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FBA2601D94D003A4EF7 /* R.generated.swift */; };
+		C7A35FBE2601DAF8003A4EF7 /* PlayerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FBD2601DAF8003A4EF7 /* PlayerViewProtocol.swift */; };
+		C7A35FC42601DE58003A4EF7 /* PlayerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FC32601DE58003A4EF7 /* PlayerPresenterProtocol.swift */; };
+		C7A35FC72601DE6A003A4EF7 /* PlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FC62601DE6A003A4EF7 /* PlayerPresenter.swift */; };
+		C7A35FCA2601E122003A4EF7 /* PlayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FC92601E122003A4EF7 /* PlayerAssembly.swift */; };
 		C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */; };
 		C7A7998D25FAA70500F44E0B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */; };
 		C7C81EA025FA648800612E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C81E9F25FA648800612E1A /* AppDelegate.swift */; };
@@ -58,6 +62,10 @@
 		C7A35F292601D6FA003A4EF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C7A35F2C2601D74A003A4EF7 /* UIView+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+isHidden.swift"; sourceTree = "<group>"; };
 		C7A35FBA2601D94D003A4EF7 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C7A35FBD2601DAF8003A4EF7 /* PlayerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewProtocol.swift; sourceTree = "<group>"; };
+		C7A35FC32601DE58003A4EF7 /* PlayerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPresenterProtocol.swift; sourceTree = "<group>"; };
+		C7A35FC62601DE6A003A4EF7 /* PlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPresenter.swift; sourceTree = "<group>"; };
+		C7A35FC92601E122003A4EF7 /* PlayerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAssembly.swift; sourceTree = "<group>"; };
 		C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		C7C81E9C25FA648800612E1A /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				C720C9992600ACF000857460 /* MusicAssembly.swift */,
+				C7A35FC92601E122003A4EF7 /* PlayerAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -157,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E46FD825FE4BD60038206F /* View */,
-				C7E46FD725FE4BCE0038206F /* Controller */,
+				C7E46FD725FE4BCE0038206F /* Presenter */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -230,17 +239,20 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		C7E46FD725FE4BCE0038206F /* Controller */ = {
+		C7E46FD725FE4BCE0038206F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */,
+				C7A35FC32601DE58003A4EF7 /* PlayerPresenterProtocol.swift */,
+				C7A35FC62601DE6A003A4EF7 /* PlayerPresenter.swift */,
 			);
-			path = Controller;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		C7E46FD825FE4BD60038206F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7A35FBD2601DAF8003A4EF7 /* PlayerViewProtocol.swift */,
+				C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */,
 				C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */,
 			);
 			path = View;
@@ -456,8 +468,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F1EC2A25FA7EE1006ABE73 /* MusicTableViewCell.swift in Sources */,
+				C7A35FC72601DE6A003A4EF7 /* PlayerPresenter.swift in Sources */,
+				C7A35FCA2601E122003A4EF7 /* PlayerAssembly.swift in Sources */,
 				C7C81EC025FA690E00612E1A /* MusicViewController.swift in Sources */,
+				C7A35FC42601DE58003A4EF7 /* PlayerPresenterProtocol.swift in Sources */,
 				C7A35FBB2601D94D003A4EF7 /* R.generated.swift in Sources */,
+				C7A35FBE2601DAF8003A4EF7 /* PlayerViewProtocol.swift in Sources */,
 				C79703D925FBA90700A86A08 /* Music.swift in Sources */,
 				C7F1EC1C25FA7E02006ABE73 /* UITableViewCell.swift in Sources */,
 				C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */,
