@@ -6,7 +6,7 @@ struct RequestHandler {
     
     private let hostUrl: String
     private let path: String
-    private let headers: HTTPHeaders = ["api-key" : "api-key"]
+    private var headers: HTTPHeaders = [:]
     private let method: HTTPMethod
     private var parameters: Parameters?
     
@@ -21,14 +21,24 @@ struct RequestHandler {
         self.parameters = parameters
     }
     
-    func response<T: Codable>(_ closure: @escaping ((T?) -> Void)) {
+    func addHeader(name: String, value: String) -> RequestHandler {
+       var new = self
+       new.headers[name] = value
+       return new
+    }
+    
+    @discardableResult
+    func response<T: Codable>(_ closure: @escaping ((T?) -> Void)) -> RequestHandler {
         responseJSON { json in
             let model = T.from(json)
             closure(model)
         }
+        
+        return self
     }
 
-    func responseJSON(_ closure: @escaping ((JSON) -> Void)) {
+    @discardableResult
+    func responseJSON(_ closure: @escaping ((JSON) -> Void)) -> RequestHandler {
         AF.request(completeUrl, method: method, parameters: parameters, headers: headers)
             .responseData { response in
                 if let data = response.data, let json = try? JSON(data: data) {
@@ -37,13 +47,18 @@ struct RequestHandler {
                     closure(JSON())
                 }
         }
+        
+        return self
     }
     
-    func getImage(_ closure: @escaping ((Data) -> Void)) {
+    @discardableResult
+    func getImage(_ closure: @escaping ((Data) -> Void)) -> RequestHandler {
         AF.request(completeUrl, method: method).responseData { response in
             if let data = response.data {
                 closure(data)
             }
         }
+        
+        return self
     }
 }

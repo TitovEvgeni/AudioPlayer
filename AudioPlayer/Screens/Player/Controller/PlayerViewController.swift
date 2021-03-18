@@ -34,9 +34,9 @@ class PlayerViewController: UIViewController {
         
         if let stringUrl = musicModel?.imageUrl {
             trackImage.setImage(from: stringUrl)
-            trackImage.showView()
+            trackImage.setHidden(false)
         } else {
-            trackImage.hideView()
+            trackImage.setHidden(true)
         }
     }
 

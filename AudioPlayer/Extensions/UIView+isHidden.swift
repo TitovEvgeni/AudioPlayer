@@ -1,11 +1,8 @@
 import UIKit
 
 extension UIView {
-    func hideView() {
-        self.isHidden = true
-    }
     
-    func showView() {
-        self.isHidden = false
+    func setHidden(_ isHidden: Bool) {
+        self.isHidden = isHidden
     }
 }
