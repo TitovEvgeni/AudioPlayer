@@ -1,10 +1,15 @@
 import UIKit
+import Swinject
 
 class MusicAssembly {
-    static func assembly() -> UIViewController {
-        let viewController = MusicViewController()
-        let presenter = MusicPresenter(view: viewController)
-        viewController.presenter = presenter
-        return viewController
+    
+    private let container: Container
+    
+    init(container: Container) {
+        self.container = container
+    }
+
+    func assembly() -> UIViewController? {
+        return container.resolve(MusicViewController.self)
     }
 }

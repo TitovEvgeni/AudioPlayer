@@ -3,10 +3,9 @@ import Foundation
 protocol MusicPresenterProtocol {
     var music: [Music]? { get set }
     var filteredMusic: [Music]? { get set }
-    
-    init(view: MusicViewProtocol)
-    
+        
     func loadMusic()
     func checkSearchField(_ songTitle: String?)
     func choseCurrentModel() -> [Music]?
+    func instantiatePlayerModule(with music: Music)
 }

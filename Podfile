@@ -10,6 +10,7 @@ target 'AudioPlayer' do
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Firebase/Database', '~> 7.8.0'
-  pod 'R.swift', '~> 5.4.0' 
+  pod 'R.swift', '~> 5.4.0'
+  pod 'Swinject', '~> 2.7.1'
 
 end

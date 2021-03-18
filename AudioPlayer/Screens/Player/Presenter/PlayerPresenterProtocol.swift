@@ -1,8 +1,9 @@
 import Foundation
 
 protocol PlayerPresenterProtocol {
-    init(view: PlayerViewProtocol, music: Music?)
+    init(music: Music?)
     
     func setMusicModel()
     func initTrack()
+    func instantiateMusicModule()
 }

@@ -14,6 +14,7 @@ class MusicViewController: UIViewController {
         super.viewDidLoad()
 
         setUpElements()
+        viewLoaded()
     }
 
     private func setUpElements() {
@@ -50,14 +51,17 @@ extension MusicViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let model = presenter?.choseCurrentModel() else { return }
         let cellViewModel = model[indexPath.row]
-        let playerViewController = PlayerAssembly.assembly(cellViewModel)
-        playerViewController.modalPresentationStyle = .fullScreen
-        present(playerViewController, animated: true, completion: nil)
+        presenter?.instantiatePlayerModule(with: cellViewModel)
     }
 }
 
 //MARK: - MusicViewProtocol
 extension MusicViewController: MusicViewProtocol {
+    
+    func viewLoaded() {
+        presenter?.loadMusic()
+    }
+    
     func hideNoResultStackView() {
         noResultsStackView.hideView()
         reloadTableData()

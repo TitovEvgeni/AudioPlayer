@@ -1,31 +1,22 @@
 import Foundation
 
 class MusicPresenter: MusicPresenterProtocol {
-    
-    private weak var view: MusicViewProtocol?
+   
+    weak var view: MusicViewProtocol?
+    var router: MusicRouterProtocol?
+    var musicService: MusicServiceProtocol?
     
     var music: [Music]?
     var filteredMusic: [Music]?
     
     private var isFiltered: Bool = false
     
-    required init(view: MusicViewProtocol) {
-        self.view = view
-        
-        loadMusic()
-    }
-    
     func loadMusic() {
-        FirebaseHandler().read(closure: { [weak self] (response: [String: MusicFirebase]?) in
+        musicService?.fetchMusic { [weak self] music in
             guard let self = self else { return }
-            self.music = (response ?? [:]).map {
-                Music(name: $0.value.name,
-                      album: $0.value.album,
-                      url: $0.value.url,
-                      imageUrl: $0.value.imageUrl)
-            }
+            self.music = music
             self.view?.reloadTableData()
-        })
+        }
     }
     
     func checkSearchField(_ songTitle: String?) {
@@ -47,6 +38,10 @@ class MusicPresenter: MusicPresenterProtocol {
         } else {
             return music
         }
+    }
+    
+    func instantiatePlayerModule(with music: Music) {
+        router?.showPlayerModule(with: music)
     }
     
     private func generateCurrentMusicModel(_ result: String) {

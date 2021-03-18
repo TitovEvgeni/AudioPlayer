@@ -24,7 +24,7 @@ class PlayerViewController: UIViewController {
     }
 
     @IBAction func dismissViewController(_ sender: UIBarItem) {
-        dismiss(animated: true, completion: nil)
+        presenter?.instantiateMusicModule()
     }
     
     @IBAction func activateMusic(_ sender: UIButton) {

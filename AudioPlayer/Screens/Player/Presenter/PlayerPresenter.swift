@@ -3,10 +3,10 @@ import Foundation
 class PlayerPresenter: PlayerPresenterProtocol {
 
     weak var view: PlayerViewProtocol?
+    var router: PlayerRouterProtocol?
     var music: Music?
     
-    required init(view: PlayerViewProtocol, music: Music?) {
-        self.view = view
+    required init(music: Music?) {
         self.music = music
     }
     
@@ -19,6 +19,10 @@ class PlayerPresenter: PlayerPresenterProtocol {
             PlayerManager.shared.initPlayer(music?.url)
         }
         trackAction()
+    }
+    
+    func instantiateMusicModule() {
+        router?.showMusicModule()
     }
     
     private func trackAction() {

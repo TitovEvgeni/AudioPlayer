@@ -12,6 +12,14 @@
 		C720C98626009A9A00857460 /* MusicViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C98526009A9A00857460 /* MusicViewProtocol.swift */; };
 		C720C9962600A17A00857460 /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C9952600A17A00857460 /* MusicPresenter.swift */; };
 		C720C99A2600ACF000857460 /* MusicAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C9992600ACF000857460 /* MusicAssembly.swift */; };
+		C76C7EFB2603426A0075A3B9 /* MusicRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7EFA2603426A0075A3B9 /* MusicRouterProtocol.swift */; };
+		C76C7EFF260342750075A3B9 /* MusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7EFE260342750075A3B9 /* MusicRouter.swift */; };
+		C76C7F0E260375900075A3B9 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7F0D260375900075A3B9 /* Assembly.swift */; };
+		C76C7F13260379290075A3B9 /* PlayerRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7F12260379290075A3B9 /* PlayerRouterProtocol.swift */; };
+		C76C7F16260379490075A3B9 /* PlayerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7F15260379490075A3B9 /* PlayerRouter.swift */; };
+		C76C7F1A260382510075A3B9 /* MusicServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7F19260382510075A3B9 /* MusicServiceProtocol.swift */; };
+		C76C7F1D260382930075A3B9 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7F1C260382930075A3B9 /* MusicService.swift */; };
+		C76C7F20260384BA0075A3B9 /* MusicServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C7F1F260384BA0075A3B9 /* MusicServiceContainer.swift */; };
 		C788520525FE0964005528D7 /* ImageViewWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788520425FE0964005528D7 /* ImageViewWeb.swift */; };
 		C79703A025FB436C00A86A08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C797039F25FB436C00A86A08 /* GoogleService-Info.plist */; };
 		C79703CA25FB73BA00A86A08 /* MusicFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79703C925FB73BA00A86A08 /* MusicFirebase.swift */; };
@@ -25,6 +33,12 @@
 		C7A35FC42601DE58003A4EF7 /* PlayerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FC32601DE58003A4EF7 /* PlayerPresenterProtocol.swift */; };
 		C7A35FC72601DE6A003A4EF7 /* PlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FC62601DE6A003A4EF7 /* PlayerPresenter.swift */; };
 		C7A35FCA2601E122003A4EF7 /* PlayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FC92601E122003A4EF7 /* PlayerAssembly.swift */; };
+		C7A35FDF26020CD1003A4EF7 /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FDE26020CD1003A4EF7 /* MainContainer.swift */; };
+		C7A35FE426020E20003A4EF7 /* MusicContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FE326020E20003A4EF7 /* MusicContainer.swift */; };
+		C7A35FE726020E77003A4EF7 /* ContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FE626020E77003A4EF7 /* ContainerProtocol.swift */; };
+		C7A35FEB26021605003A4EF7 /* ContainersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A35FEA26021605003A4EF7 /* ContainersController.swift */; };
+		C7A3601126022D50003A4EF7 /* PlayerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3601026022D50003A4EF7 /* PlayerContainer.swift */; };
+		C7A3601B2602462C003A4EF7 /* Singletone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A3601A2602462C003A4EF7 /* Singletone.swift */; };
 		C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */; };
 		C7A7998D25FAA70500F44E0B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */; };
 		C7C81EA025FA648800612E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C81E9F25FA648800612E1A /* AppDelegate.swift */; };
@@ -53,6 +67,14 @@
 		C720C98526009A9A00857460 /* MusicViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewProtocol.swift; sourceTree = "<group>"; };
 		C720C9952600A17A00857460 /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
 		C720C9992600ACF000857460 /* MusicAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAssembly.swift; sourceTree = "<group>"; };
+		C76C7EFA2603426A0075A3B9 /* MusicRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouterProtocol.swift; sourceTree = "<group>"; };
+		C76C7EFE260342750075A3B9 /* MusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouter.swift; sourceTree = "<group>"; };
+		C76C7F0D260375900075A3B9 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		C76C7F12260379290075A3B9 /* PlayerRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRouterProtocol.swift; sourceTree = "<group>"; };
+		C76C7F15260379490075A3B9 /* PlayerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRouter.swift; sourceTree = "<group>"; };
+		C76C7F19260382510075A3B9 /* MusicServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceProtocol.swift; sourceTree = "<group>"; };
+		C76C7F1C260382930075A3B9 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		C76C7F1F260384BA0075A3B9 /* MusicServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServiceContainer.swift; sourceTree = "<group>"; };
 		C788520425FE0964005528D7 /* ImageViewWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWeb.swift; sourceTree = "<group>"; };
 		C797039F25FB436C00A86A08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C79703C925FB73BA00A86A08 /* MusicFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicFirebase.swift; sourceTree = "<group>"; };
@@ -66,6 +88,12 @@
 		C7A35FC32601DE58003A4EF7 /* PlayerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPresenterProtocol.swift; sourceTree = "<group>"; };
 		C7A35FC62601DE6A003A4EF7 /* PlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPresenter.swift; sourceTree = "<group>"; };
 		C7A35FC92601E122003A4EF7 /* PlayerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAssembly.swift; sourceTree = "<group>"; };
+		C7A35FDE26020CD1003A4EF7 /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
+		C7A35FE326020E20003A4EF7 /* MusicContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicContainer.swift; sourceTree = "<group>"; };
+		C7A35FE626020E77003A4EF7 /* ContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerProtocol.swift; sourceTree = "<group>"; };
+		C7A35FEA26021605003A4EF7 /* ContainersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainersController.swift; sourceTree = "<group>"; };
+		C7A3601026022D50003A4EF7 /* PlayerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainer.swift; sourceTree = "<group>"; };
+		C7A3601A2602462C003A4EF7 /* Singletone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletone.swift; sourceTree = "<group>"; };
 		C7A7998A25FAA70500F44E0B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		C7A7998B25FAA70500F44E0B /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		C7C81E9C25FA648800612E1A /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,10 +148,38 @@
 		C720C9982600ACA500857460 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				C76C7F0D260375900075A3B9 /* Assembly.swift */,
 				C720C9992600ACF000857460 /* MusicAssembly.swift */,
 				C7A35FC92601E122003A4EF7 /* PlayerAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		C76C7EF9260342460075A3B9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7EFA2603426A0075A3B9 /* MusicRouterProtocol.swift */,
+				C76C7EFE260342750075A3B9 /* MusicRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C76C7F11260379050075A3B9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7F12260379290075A3B9 /* PlayerRouterProtocol.swift */,
+				C76C7F15260379490075A3B9 /* PlayerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C76C7F18260382290075A3B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C76C7F19260382510075A3B9 /* MusicServiceProtocol.swift */,
+				C76C7F1C260382930075A3B9 /* MusicService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C788520325FE0947005528D7 /* Helpers */ = {
@@ -131,6 +187,7 @@
 			children = (
 				C788520425FE0964005528D7 /* ImageViewWeb.swift */,
 				C7E46FA725FE18490038206F /* LinearGradient.swift */,
+				C7A3601A2602462C003A4EF7 /* Singletone.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -162,9 +219,37 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		C7A35FDD26020CBB003A4EF7 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				C7A35FDE26020CD1003A4EF7 /* MainContainer.swift */,
+				C7A35FE326020E20003A4EF7 /* MusicContainer.swift */,
+				C7A3601026022D50003A4EF7 /* PlayerContainer.swift */,
+				C76C7F1F260384BA0075A3B9 /* MusicServiceContainer.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		C7A35FE126020DC8003A4EF7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7A35FE626020E77003A4EF7 /* ContainerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7A35FE9260215EC003A4EF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7A35FEA26021605003A4EF7 /* ContainersController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C7A7998925FAA6F100F44E0B /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				C76C7F11260379050075A3B9 /* Router */,
 				C7E46FD825FE4BD60038206F /* View */,
 				C7E46FD725FE4BCE0038206F /* Presenter */,
 			);
@@ -192,8 +277,12 @@
 		C7C81E9E25FA648800612E1A /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C7A35FE9260215EC003A4EF7 /* Controller */,
+				C7A35FDD26020CBB003A4EF7 /* Containers */,
 				C720C9982600ACA500857460 /* Assembly */,
+				C7A35FE126020DC8003A4EF7 /* Protocols */,
 				C7F1EC3425FA9879006ABE73 /* Objects */,
+				C76C7F18260382290075A3B9 /* Services */,
 				C7F1EC4125FAA05E006ABE73 /* Manager */,
 				C788520325FE0947005528D7 /* Helpers */,
 				C7E46FAF25FE3E360038206F /* Enums */,
@@ -224,6 +313,7 @@
 		C7C81EBD25FA68F300612E1A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				C76C7EF9260342460075A3B9 /* Router */,
 				C79703D525FBA8DF00A86A08 /* Model */,
 				C79703D625FBA8E500A86A08 /* View */,
 				C79703D725FBA8EA00A86A08 /* Presenter */,
@@ -473,26 +563,40 @@
 				C7C81EC025FA690E00612E1A /* MusicViewController.swift in Sources */,
 				C7A35FC42601DE58003A4EF7 /* PlayerPresenterProtocol.swift in Sources */,
 				C7A35FBB2601D94D003A4EF7 /* R.generated.swift in Sources */,
+				C7A3601B2602462C003A4EF7 /* Singletone.swift in Sources */,
 				C7A35FBE2601DAF8003A4EF7 /* PlayerViewProtocol.swift in Sources */,
+				C76C7F20260384BA0075A3B9 /* MusicServiceContainer.swift in Sources */,
+				C7A35FE726020E77003A4EF7 /* ContainerProtocol.swift in Sources */,
 				C79703D925FBA90700A86A08 /* Music.swift in Sources */,
+				C7A35FEB26021605003A4EF7 /* ContainersController.swift in Sources */,
+				C76C7F16260379490075A3B9 /* PlayerRouter.swift in Sources */,
+				C7A3601126022D50003A4EF7 /* PlayerContainer.swift in Sources */,
 				C7F1EC1C25FA7E02006ABE73 /* UITableViewCell.swift in Sources */,
+				C7A35FE426020E20003A4EF7 /* MusicContainer.swift in Sources */,
 				C7A7998C25FAA70500F44E0B /* PlayerViewController.swift in Sources */,
 				C79703D025FB7B6E00A86A08 /* Codable+Dictionary.swift in Sources */,
 				C7F1EC3625FA9890006ABE73 /* RequestHandler.swift in Sources */,
 				C7E46FA825FE18490038206F /* LinearGradient.swift in Sources */,
+				C76C7F1D260382930075A3B9 /* MusicService.swift in Sources */,
 				C7F1EC3A25FA98CD006ABE73 /* Codable+JSON.swift in Sources */,
 				C720C98626009A9A00857460 /* MusicViewProtocol.swift in Sources */,
+				C76C7F1A260382510075A3B9 /* MusicServiceProtocol.swift in Sources */,
 				C7C81EA025FA648800612E1A /* AppDelegate.swift in Sources */,
+				C7A35FDF26020CD1003A4EF7 /* MainContainer.swift in Sources */,
 				C720C9962600A17A00857460 /* MusicPresenter.swift in Sources */,
 				C7A35F2D2601D74A003A4EF7 /* UIView+isHidden.swift in Sources */,
+				C76C7EFB2603426A0075A3B9 /* MusicRouterProtocol.swift in Sources */,
 				C788520525FE0964005528D7 /* ImageViewWeb.swift in Sources */,
 				C7C81EA225FA648800612E1A /* SceneDelegate.swift in Sources */,
 				C79703CD25FB73D300A86A08 /* FirebaseHandler.swift in Sources */,
 				C7F1EC3225FA897A006ABE73 /* MusicViewController+UISearchBarDelegate.swift in Sources */,
 				C720C98326009A8400857460 /* MusicPresenterProtocol.swift in Sources */,
 				C7E46FAD25FE3A0B0038206F /* PlayerManager.swift in Sources */,
+				C76C7F13260379290075A3B9 /* PlayerRouterProtocol.swift in Sources */,
+				C76C7EFF260342750075A3B9 /* MusicRouter.swift in Sources */,
 				C7F1EC3E25FA9F9D006ABE73 /* MusicResult.swift in Sources */,
 				C7E46FB125FE3E510038206F /* PlayerRate.swift in Sources */,
+				C76C7F0E260375900075A3B9 /* Assembly.swift in Sources */,
 				C7F1EC4325FAA07F006ABE73 /* MusicManager.swift in Sources */,
 				C79703CA25FB73BA00A86A08 /* MusicFirebase.swift in Sources */,
 				C720C99A2600ACF000857460 /* MusicAssembly.swift in Sources */,

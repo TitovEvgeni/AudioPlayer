@@ -37,6 +37,7 @@ PODS:
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - SwiftyJSON (4.3.0)
+  - Swinject (2.7.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift (~> 6.5.0)
   - R.swift (~> 5.4.0)
   - SwiftyJSON (~> 4.0)
+  - Swinject (~> 2.7.1)
 
 SPEC REPOS:
   trunk:
@@ -61,6 +63,7 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - SwiftyJSON
+    - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -77,7 +80,8 @@ SPEC CHECKSUMS:
   R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: adedf79cae0531dbd74ccf8d32ce324c6755960f
+PODFILE CHECKSUM: 99902cb72ac932ad66ab6aa3f0882f59613822c7
 
 COCOAPODS: 1.10.0
